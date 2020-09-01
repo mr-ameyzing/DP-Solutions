@@ -24,7 +24,7 @@ int editDistance(string s1, string s2, int p, int q)
 		{
 			if(i==0)
 				dp[i%2][j] = j;
-			if(j==0)
+			else if(j==0)
 				dp[i%2][j] = i;
 			else
 			{
